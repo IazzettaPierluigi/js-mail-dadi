@@ -19,3 +19,20 @@ if (dadoComputer > dadoGiocatore){
 } else {
     console.log("è un pareggio!")
 }
+
+//faccio apparire dadoGiocatore nell'html
+
+document.getElementById('risult-giocatore').innerHTML = `questo è il tuo numero: ${dadoGiocatore}`
+
+//faccio apparire dadoComputer nell'html
+document.getElementById('risult-computer').innerHTML = `questo è il numero del computer: ${dadoComputer}`
+
+
+//faccio comparire a pagina il vincitore
+if (dadoComputer > dadoGiocatore){
+    document.getElementById('vincitore').innerHTML = 'ha vinto il computer!'
+} else if (dadoComputer < dadoGiocatore){
+    document.getElementById('vincitore').innerHTML = 'ha vinto il giocatore!'
+} else {
+    document.getElementById('vincitore').innerHTML = 'è un pareggio!'
+}

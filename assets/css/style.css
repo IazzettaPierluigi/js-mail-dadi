@@ -3,3 +3,19 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+#campo-gioco{
+    width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#campo-gioco h2{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+#your-number{
+    font-size: 20px;
+    color: red;
+}
