@@ -36,3 +36,9 @@ if (dadoComputer > dadoGiocatore){
 } else {
     document.getElementById('vincitore').innerHTML = 'è un pareggio!'
 }
+
+//INIZIO CODICE PER RICHIESTA EMAIL E CONTROLLO IN ARRAY
+
+let emailAutorizzate = ["giovanni@gmail.com", "piero@gmail.com", "alessandro@gmail.com", "anto@gmail.com"]
+
+console.log(emailAutorizzate)

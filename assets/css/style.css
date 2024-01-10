@@ -4,18 +4,46 @@
     box-sizing: border-box;
 }
 
+body{
+    background-color: lightgray;
+}
+
 #campo-gioco{
     width: 1000px;
-    margin: 0 auto;
+    margin: 20px auto;
+    padding: 20px;
+
     text-align: center;
+
+    border: 2px solid black;
+    border-bottom: 4px solid black;
 }
 
 #campo-gioco h2{
-    font-size: 30px;
+    font-size: 40px;
+    margin-bottom: 20px;
+    color:red;
+}
+
+#campo-gioco #risult-giocatore{
+    color:blue;
+    text-transform: uppercase;
     margin-bottom: 20px;
 }
 
-#your-number{
-    font-size: 20px;
-    color: red;
+#campo-gioco #risult-computer{
+    color:purple;
+    text-transform: uppercase;
+    margin-bottom: 20px;
 }
+
+#campo-gioco #vincitore{
+    color: darkgreen;
+    text-transform: uppercase;
+    font-size: 30px;
+    text-decoration: underline;
+}
+
+/* fine della sezione dei dadi */
+
+/* SEZIONE DELLA EMAIL */
