@@ -39,21 +39,39 @@ if (dadoComputer > dadoGiocatore){
 
 //INIZIO CODICE PER RICHIESTA EMAIL E CONTROLLO IN ARRAY
 
+//PROCEDIMENTO USANDO .INCLUDES
+
+// let verificaButton = document.getElementById('verificaButton');
+
+// verificaButton.addEventListener("click",
+//     function(){
+//         let emailUtente = document.getElementById("email-input").value;
+
+//          console.log (emailUtente)
+
+//          let emailAutorizzate = ["piero@gmail.com"]
+
+//          if (emailAutorizzate.includes(emailUtente)){
+//             document.getElementById("risultato").innerHTML = "verifica riuscita"
+//          } else {
+//             document.getElementById("risultato").innerHTML = "verifica fallita"
+//          }
+//     }
+// )
+
+//PROCEDIMENTO USANDO LE TRUE/FALSE 
+
+
 let verificaButton = document.getElementById('verificaButton');
 
-verificaButton.addEventListener("click",
-    function(){
-        let emailUtente = document.getElementById("email-input").value;
+ verificaButton.addEventListener("click",
+     function(){
 
-         console.log (emailUtente)
+         let emailAutorizzate = ["piero@gmail.com", "antonio@gmail.com", "giovanni@gmail.com", "giuseppe@gmail.com"]
+         
+         let emailUtente = document.getElementById("email-input").value;
+         console.log(emailUtente)
 
-         let emailAutorizzate = ["piero@gmail.com"]
-
-         if (emailAutorizzate.includes(emailUtente)){
-            document.getElementById("risultato").innerHTML = "verifica riuscita"
-         } else {
-            document.getElementById("risultato").innerHTML = "verifica fallita"
-         }
-    }
-)
-
+         
+     }
+     )
