@@ -70,8 +70,15 @@ let verificaButton = document.getElementById('verificaButton');
          let emailAutorizzate = ["piero@gmail.com", "antonio@gmail.com", "giovanni@gmail.com", "giuseppe@gmail.com"]
          
          let emailUtente = document.getElementById("email-input").value;
-         console.log(emailUtente)
-
          
+
+         let emailTrovata = false;
+        console.log (emailTrovata)
+         for (let i = 0; i < emailAutorizzate.length; i++) {
+            if (emailAutorizzate[i] === emailUtente){
+                emailTrovata = true;
+            }
+         }
+         console.log(emailTrovata)
      }
      )
