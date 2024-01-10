@@ -80,5 +80,11 @@ let verificaButton = document.getElementById('verificaButton');
             }
          }
          console.log(emailTrovata)
+
+         if (emailTrovata === true) {
+            document.getElementById('risultato').innerHTML = "la email è presente"
+         } else { 
+            document.getElementById('risultato').innerHTML = "la email non è presente"
+         }
      }
      )
