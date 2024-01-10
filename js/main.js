@@ -39,6 +39,21 @@ if (dadoComputer > dadoGiocatore){
 
 //INIZIO CODICE PER RICHIESTA EMAIL E CONTROLLO IN ARRAY
 
-let emailAutorizzate = ["giovanni@gmail.com", "piero@gmail.com", "alessandro@gmail.com", "anto@gmail.com"]
+let verificaButton = document.getElementById('verificaButton');
 
-console.log(emailAutorizzate)
+verificaButton.addEventListener("click",
+    function(){
+        let emailUtente = document.getElementById("email-input").value;
+
+         console.log (emailUtente)
+
+         let emailAutorizzate = ["piero@gmail.com"]
+
+         if (emailAutorizzate.includes(emailUtente)){
+            document.getElementById("risultato").innerHTML = "verifica riuscita"
+         } else {
+            document.getElementById("risultato").innerHTML = "verifica fallita"
+         }
+    }
+)
+

@@ -47,3 +47,14 @@ body{
 /* fine della sezione dei dadi */
 
 /* SEZIONE DELLA EMAIL */
+
+#email-div{
+    width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+
+    text-align: center;
+
+    border: 2px solid black;
+    border-bottom: 4px solid black;
+}
